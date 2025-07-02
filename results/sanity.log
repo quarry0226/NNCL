@@ -1,0 +1,28 @@
+[INFO] Received CLI args: Namespace(dataset='cifar10', data_root=WindowsPath('data'), backbones=['resnet18'], redundancy=0.25, learnable_A=False, no_nncl=False, dropout_rates=[0.0], noise_stds=[0.05], erasure_rates=[0.0, 0.3, 0.6], epochs=5, batch=128, warmup_epochs=5, aux_rec_loss=False, lambda_rec=1.0, num_workers=2, seed=42, deterministic=False, device='cuda', csv_out=WindowsPath('results/sanity.csv'), use_masked_var=False, lr=0.0001)
+[INFO] Running with backbone=resnet18, dp=0.0, noise=0.05, erasure_rates=[0.0, 0.3, 0.6]
+[INFO] 
+=============== 시작: 백본=resnet18, 데이터셋=cifar10, DP=0.0, Noise=0.05, Seed=42, Warmup=5 ===============
+[INFO] [Opt] AdamW lr=1.0000e-04, 스케줄러: 5 에폭 선형 워밍업 후 코사인 감쇠 (전체 5 에폭)
+[INFO] 확인용 feat_dim: 512
+[INFO] Avg erased per sample: 1.0 dims (0.2% of total)
+[INFO] Ep001/5 | Lr 4.00e-05 | TrL 1.872 TrA 0.333 TrF1 0.333 TrFR 0.999969 || VaL 1.464 VaA 0.484 VaF1 0.483 VaFR 0.999974
+[INFO] 확인용 feat_dim: 512
+[INFO] Avg erased per sample: 1.0 dims (0.2% of total)
+[INFO] Ep002/5 | Lr 6.00e-05 | TrL 1.314 TrA 0.531 TrF1 0.530 TrFR 0.999971 || VaL 1.078 VaA 0.618 VaF1 0.614 VaFR 0.999974
+[INFO] 확인용 feat_dim: 512
+[INFO] Avg erased per sample: 1.0 dims (0.2% of total)
+[INFO] Ep003/5 | Lr 8.00e-05 | TrL 1.098 TrA 0.612 TrF1 0.611 TrFR 0.999971 || VaL 0.891 VaA 0.689 VaF1 0.686 VaFR 0.999974
+[INFO] 확인용 feat_dim: 512
+[INFO] Avg erased per sample: 1.0 dims (0.2% of total)
+[INFO] Ep004/5 | Lr 1.00e-04 | TrL 0.978 TrA 0.656 TrF1 0.655 TrFR 0.999971 || VaL 0.791 VaA 0.726 VaF1 0.724 VaFR 0.999973
+[INFO] 확인용 feat_dim: 512
+[INFO] Avg erased per sample: 1.0 dims (0.2% of total)
+[INFO] Ep005/5 | Lr 1.00e-04 | TrL 0.892 TrA 0.686 TrF1 0.686 TrFR 0.999970 || VaL 0.723 VaA 0.746 VaF1 0.746 VaFR 0.999973
+[INFO] 학습 곡선 저장 완료 → results\curves\resnet18_datasetcifar10_dp0.0_noise0.05_seed42_epochs5_w5_curve.csv
+[INFO] 모델 체크포인트 저장 완료 → results\checkpoints\resnet18_cifar10_dp0.0_noise0.05_seed42.pth
+[INFO] [Eval] Erasure 0.00 | Acc 0.746 F1 0.746 FR 0.999973 Loss 0.723
+[INFO] [Eval] Erasure 0.30 | Acc 0.746 F1 0.746 FR 0.999973 Loss 0.938
+[INFO] [Eval] Erasure 0.60 | Acc 0.746 F1 0.746 FR 0.999973 Loss 1.154
+[INFO] =============== 종료: 백본=resnet18, 데이터셋=cifar10, DP=0.0, Noise=0.05, Seed=42, Warmup=5 ===============
+
+[INFO] 모든 실험 요약 결과 저장 완료 → results\sanity.csv

@@ -1,0 +1,4 @@
+backbone,dataset,dropout_p,noise_std,erasure,accuracy,f1,fr_accuracy,redundancy,learnable_A,aux_rec_loss,lambda_rec,no_nncl,final_eval_loss,seed,epochs,batch_size,warmup_epochs
+resnet50,cifar10,0.2,0.05,0.0,0.896,0.895789059237792,0.0,0.5,True,True,1.0,False,0.4940177575111389,42,120,128,5
+resnet50,cifar10,0.2,0.05,0.2,0.896,0.895789059237792,0.999959397038675,0.5,True,True,1.0,False,0.5925323122024536,42,120,128,5
+resnet50,cifar10,0.2,0.05,0.4,0.896,0.895789059237792,0.9999610864646299,0.5,True,True,1.0,False,0.6913287732124329,42,120,128,5

@@ -1,0 +1,373 @@
+[INFO] Received CLI args: Namespace(dataset='cifar100', data_root=WindowsPath('data'), backbones=['efficientnet_b0'], redundancy=0.5, learnable_A=True, no_nncl=False, dropout_rates=[0.2], noise_stds=[0.05], erasure_rates=[0.0, 0.2, 0.4], epochs=120, batch=128, warmup_epochs=5, aux_rec_loss=True, lambda_rec=1.0, num_workers=8, seed=42, deterministic=False, device='cuda', csv_out=WindowsPath('results/lr_tune_efficientnet_b0_lr1e4_learnA.csv'), use_masked_var=True, lr=0.0001)
+[INFO] Running with backbone=efficientnet_b0, dp=0.2, noise=0.05, erasure_rates=[0.0, 0.2, 0.4]
+[INFO] 
+=============== 시작: 백본=efficientnet_b0, 데이터셋=cifar100, DP=0.2, Noise=0.05, Seed=42, Warmup=5 ===============
+[INFO] [Opt] AdamW lr=1.0000e-04, 스케줄러: 5 에폭 선형 워밍업 후 코사인 감쇠 (전체 120 에폭)
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep001/120 | Lr 4.00e-05 | TrL 4.650 TrA 0.015 TrF1 0.014 TrFR 0.999954 || VaL 4.588 VaA 0.023 VaF1 0.022 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep002/120 | Lr 6.00e-05 | TrL 4.447 TrA 0.046 TrF1 0.041 TrFR 0.999954 || VaL 4.250 VaA 0.083 VaF1 0.067 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.8 dims (20.0% of total)
+[INFO] Ep003/120 | Lr 8.00e-05 | TrL 4.020 TrA 0.108 TrF1 0.088 TrFR 0.999954 || VaL 3.725 VaA 0.153 VaF1 0.128 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep004/120 | Lr 1.00e-04 | TrL 3.540 TrA 0.175 TrF1 0.154 TrFR 0.999957 || VaL 3.180 VaA 0.238 VaF1 0.216 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep005/120 | Lr 1.00e-04 | TrL 3.112 TrA 0.241 TrF1 0.223 TrFR 0.999960 || VaL 2.767 VaA 0.303 VaF1 0.287 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep006/120 | Lr 1.00e-04 | TrL 2.816 TrA 0.294 TrF1 0.280 TrFR 0.999962 || VaL 2.499 VaA 0.359 VaF1 0.342 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep007/120 | Lr 9.99e-05 | TrL 2.620 TrA 0.332 TrF1 0.320 TrFR 0.999962 || VaL 2.308 VaA 0.401 VaF1 0.385 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep008/120 | Lr 9.98e-05 | TrL 2.463 TrA 0.363 TrF1 0.352 TrFR 0.999963 || VaL 2.175 VaA 0.428 VaF1 0.414 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep009/120 | Lr 9.97e-05 | TrL 2.336 TrA 0.389 TrF1 0.380 TrFR 0.999963 || VaL 2.080 VaA 0.448 VaF1 0.437 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep010/120 | Lr 9.95e-05 | TrL 2.236 TrA 0.410 TrF1 0.402 TrFR 0.999963 || VaL 2.016 VaA 0.460 VaF1 0.448 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep011/120 | Lr 9.93e-05 | TrL 2.152 TrA 0.429 TrF1 0.421 TrFR 0.999964 || VaL 1.950 VaA 0.476 VaF1 0.466 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep012/120 | Lr 9.91e-05 | TrL 2.068 TrA 0.446 TrF1 0.439 TrFR 0.999964 || VaL 1.901 VaA 0.486 VaF1 0.475 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep013/120 | Lr 9.88e-05 | TrL 1.993 TrA 0.463 TrF1 0.456 TrFR 0.999964 || VaL 1.862 VaA 0.492 VaF1 0.482 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.2 dims (20.0% of total)
+[INFO] Ep014/120 | Lr 9.85e-05 | TrL 1.940 TrA 0.475 TrF1 0.469 TrFR 0.999964 || VaL 1.822 VaA 0.506 VaF1 0.495 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep015/120 | Lr 9.81e-05 | TrL 1.878 TrA 0.490 TrF1 0.485 TrFR 0.999965 || VaL 1.793 VaA 0.512 VaF1 0.502 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep016/120 | Lr 9.78e-05 | TrL 1.825 TrA 0.500 TrF1 0.495 TrFR 0.999965 || VaL 1.763 VaA 0.518 VaF1 0.509 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep017/120 | Lr 9.73e-05 | TrL 1.770 TrA 0.517 TrF1 0.512 TrFR 0.999965 || VaL 1.741 VaA 0.527 VaF1 0.519 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep018/120 | Lr 9.69e-05 | TrL 1.719 TrA 0.528 TrF1 0.523 TrFR 0.999965 || VaL 1.715 VaA 0.532 VaF1 0.525 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep019/120 | Lr 9.64e-05 | TrL 1.677 TrA 0.536 TrF1 0.532 TrFR 0.999965 || VaL 1.703 VaA 0.534 VaF1 0.528 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep020/120 | Lr 9.59e-05 | TrL 1.631 TrA 0.548 TrF1 0.545 TrFR 0.999965 || VaL 1.685 VaA 0.540 VaF1 0.533 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep021/120 | Lr 9.53e-05 | TrL 1.595 TrA 0.556 TrF1 0.553 TrFR 0.999965 || VaL 1.678 VaA 0.544 VaF1 0.538 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep022/120 | Lr 9.47e-05 | TrL 1.547 TrA 0.570 TrF1 0.566 TrFR 0.999965 || VaL 1.672 VaA 0.545 VaF1 0.538 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep023/120 | Lr 9.41e-05 | TrL 1.520 TrA 0.576 TrF1 0.572 TrFR 0.999965 || VaL 1.654 VaA 0.548 VaF1 0.542 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep024/120 | Lr 9.34e-05 | TrL 1.481 TrA 0.585 TrF1 0.582 TrFR 0.999966 || VaL 1.655 VaA 0.546 VaF1 0.539 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep025/120 | Lr 9.27e-05 | TrL 1.446 TrA 0.592 TrF1 0.589 TrFR 0.999966 || VaL 1.645 VaA 0.550 VaF1 0.545 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep026/120 | Lr 9.20e-05 | TrL 1.413 TrA 0.600 TrF1 0.597 TrFR 0.999966 || VaL 1.638 VaA 0.552 VaF1 0.546 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep027/120 | Lr 9.12e-05 | TrL 1.379 TrA 0.612 TrF1 0.609 TrFR 0.999966 || VaL 1.633 VaA 0.557 VaF1 0.552 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep028/120 | Lr 9.05e-05 | TrL 1.347 TrA 0.616 TrF1 0.614 TrFR 0.999966 || VaL 1.634 VaA 0.557 VaF1 0.551 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep029/120 | Lr 8.96e-05 | TrL 1.314 TrA 0.628 TrF1 0.626 TrFR 0.999966 || VaL 1.634 VaA 0.557 VaF1 0.551 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep030/120 | Lr 8.88e-05 | TrL 1.291 TrA 0.633 TrF1 0.631 TrFR 0.999966 || VaL 1.630 VaA 0.564 VaF1 0.558 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep031/120 | Lr 8.79e-05 | TrL 1.259 TrA 0.640 TrF1 0.638 TrFR 0.999966 || VaL 1.632 VaA 0.559 VaF1 0.555 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep032/120 | Lr 8.70e-05 | TrL 1.232 TrA 0.646 TrF1 0.644 TrFR 0.999966 || VaL 1.641 VaA 0.561 VaF1 0.557 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep033/120 | Lr 8.61e-05 | TrL 1.207 TrA 0.655 TrF1 0.653 TrFR 0.999966 || VaL 1.647 VaA 0.560 VaF1 0.556 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep034/120 | Lr 8.51e-05 | TrL 1.183 TrA 0.663 TrF1 0.661 TrFR 0.999966 || VaL 1.642 VaA 0.561 VaF1 0.556 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep035/120 | Lr 8.41e-05 | TrL 1.152 TrA 0.671 TrF1 0.669 TrFR 0.999966 || VaL 1.648 VaA 0.560 VaF1 0.556 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep036/120 | Lr 8.31e-05 | TrL 1.128 TrA 0.676 TrF1 0.675 TrFR 0.999966 || VaL 1.640 VaA 0.565 VaF1 0.561 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep037/120 | Lr 8.21e-05 | TrL 1.105 TrA 0.682 TrF1 0.681 TrFR 0.999966 || VaL 1.645 VaA 0.561 VaF1 0.556 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep038/120 | Lr 8.10e-05 | TrL 1.084 TrA 0.688 TrF1 0.687 TrFR 0.999966 || VaL 1.659 VaA 0.559 VaF1 0.556 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep039/120 | Lr 7.99e-05 | TrL 1.062 TrA 0.694 TrF1 0.693 TrFR 0.999967 || VaL 1.658 VaA 0.562 VaF1 0.557 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep040/120 | Lr 7.88e-05 | TrL 1.028 TrA 0.704 TrF1 0.703 TrFR 0.999967 || VaL 1.664 VaA 0.564 VaF1 0.559 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep041/120 | Lr 7.77e-05 | TrL 1.014 TrA 0.708 TrF1 0.707 TrFR 0.999967 || VaL 1.683 VaA 0.564 VaF1 0.560 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep042/120 | Lr 7.66e-05 | TrL 1.006 TrA 0.709 TrF1 0.708 TrFR 0.999967 || VaL 1.673 VaA 0.567 VaF1 0.562 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep043/120 | Lr 7.54e-05 | TrL 0.978 TrA 0.718 TrF1 0.716 TrFR 0.999967 || VaL 1.680 VaA 0.564 VaF1 0.561 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep044/120 | Lr 7.42e-05 | TrL 0.960 TrA 0.721 TrF1 0.720 TrFR 0.999967 || VaL 1.680 VaA 0.565 VaF1 0.562 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep045/120 | Lr 7.30e-05 | TrL 0.943 TrA 0.729 TrF1 0.728 TrFR 0.999967 || VaL 1.693 VaA 0.566 VaF1 0.561 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep046/120 | Lr 7.18e-05 | TrL 0.917 TrA 0.735 TrF1 0.734 TrFR 0.999967 || VaL 1.690 VaA 0.564 VaF1 0.560 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep047/120 | Lr 7.05e-05 | TrL 0.906 TrA 0.740 TrF1 0.739 TrFR 0.999967 || VaL 1.704 VaA 0.565 VaF1 0.562 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep048/120 | Lr 6.93e-05 | TrL 0.884 TrA 0.745 TrF1 0.744 TrFR 0.999967 || VaL 1.706 VaA 0.567 VaF1 0.562 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep049/120 | Lr 6.80e-05 | TrL 0.865 TrA 0.748 TrF1 0.747 TrFR 0.999967 || VaL 1.720 VaA 0.569 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep050/120 | Lr 6.67e-05 | TrL 0.857 TrA 0.753 TrF1 0.753 TrFR 0.999967 || VaL 1.711 VaA 0.569 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep051/120 | Lr 6.55e-05 | TrL 0.837 TrA 0.760 TrF1 0.759 TrFR 0.999967 || VaL 1.728 VaA 0.568 VaF1 0.564 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep052/120 | Lr 6.41e-05 | TrL 0.821 TrA 0.762 TrF1 0.762 TrFR 0.999967 || VaL 1.727 VaA 0.566 VaF1 0.562 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep053/120 | Lr 6.28e-05 | TrL 0.804 TrA 0.768 TrF1 0.768 TrFR 0.999967 || VaL 1.740 VaA 0.565 VaF1 0.561 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep054/120 | Lr 6.15e-05 | TrL 0.792 TrA 0.772 TrF1 0.771 TrFR 0.999967 || VaL 1.738 VaA 0.568 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep055/120 | Lr 6.02e-05 | TrL 0.784 TrA 0.773 TrF1 0.772 TrFR 0.999967 || VaL 1.735 VaA 0.568 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep056/120 | Lr 5.88e-05 | TrL 0.765 TrA 0.779 TrF1 0.778 TrFR 0.999967 || VaL 1.737 VaA 0.567 VaF1 0.563 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep057/120 | Lr 5.75e-05 | TrL 0.757 TrA 0.779 TrF1 0.778 TrFR 0.999967 || VaL 1.748 VaA 0.570 VaF1 0.566 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep058/120 | Lr 5.61e-05 | TrL 0.735 TrA 0.788 TrF1 0.787 TrFR 0.999967 || VaL 1.751 VaA 0.566 VaF1 0.562 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep059/120 | Lr 5.48e-05 | TrL 0.735 TrA 0.789 TrF1 0.788 TrFR 0.999967 || VaL 1.760 VaA 0.569 VaF1 0.567 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.2 dims (20.0% of total)
+[INFO] Ep060/120 | Lr 5.34e-05 | TrL 0.722 TrA 0.791 TrF1 0.790 TrFR 0.999967 || VaL 1.759 VaA 0.568 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep061/120 | Lr 5.20e-05 | TrL 0.709 TrA 0.795 TrF1 0.794 TrFR 0.999967 || VaL 1.759 VaA 0.569 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep062/120 | Lr 5.07e-05 | TrL 0.701 TrA 0.798 TrF1 0.798 TrFR 0.999967 || VaL 1.770 VaA 0.569 VaF1 0.566 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep063/120 | Lr 4.93e-05 | TrL 0.691 TrA 0.801 TrF1 0.801 TrFR 0.999967 || VaL 1.776 VaA 0.570 VaF1 0.567 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep064/120 | Lr 4.80e-05 | TrL 0.689 TrA 0.801 TrF1 0.801 TrFR 0.999967 || VaL 1.771 VaA 0.566 VaF1 0.563 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep065/120 | Lr 4.66e-05 | TrL 0.665 TrA 0.808 TrF1 0.807 TrFR 0.999968 || VaL 1.777 VaA 0.570 VaF1 0.567 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep066/120 | Lr 4.52e-05 | TrL 0.658 TrA 0.811 TrF1 0.810 TrFR 0.999968 || VaL 1.795 VaA 0.567 VaF1 0.564 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep067/120 | Lr 4.39e-05 | TrL 0.655 TrA 0.812 TrF1 0.812 TrFR 0.999968 || VaL 1.783 VaA 0.568 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep068/120 | Lr 4.25e-05 | TrL 0.644 TrA 0.815 TrF1 0.815 TrFR 0.999968 || VaL 1.787 VaA 0.568 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep069/120 | Lr 4.12e-05 | TrL 0.636 TrA 0.816 TrF1 0.816 TrFR 0.999968 || VaL 1.802 VaA 0.568 VaF1 0.564 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep070/120 | Lr 3.98e-05 | TrL 0.625 TrA 0.820 TrF1 0.820 TrFR 0.999968 || VaL 1.795 VaA 0.569 VaF1 0.566 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep071/120 | Lr 3.85e-05 | TrL 0.617 TrA 0.822 TrF1 0.821 TrFR 0.999968 || VaL 1.800 VaA 0.572 VaF1 0.569 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep072/120 | Lr 3.72e-05 | TrL 0.607 TrA 0.825 TrF1 0.824 TrFR 0.999968 || VaL 1.814 VaA 0.569 VaF1 0.566 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep073/120 | Lr 3.59e-05 | TrL 0.600 TrA 0.826 TrF1 0.826 TrFR 0.999968 || VaL 1.821 VaA 0.571 VaF1 0.568 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep074/120 | Lr 3.45e-05 | TrL 0.599 TrA 0.828 TrF1 0.828 TrFR 0.999968 || VaL 1.819 VaA 0.568 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep075/120 | Lr 3.33e-05 | TrL 0.588 TrA 0.831 TrF1 0.831 TrFR 0.999968 || VaL 1.811 VaA 0.571 VaF1 0.568 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep076/120 | Lr 3.20e-05 | TrL 0.579 TrA 0.834 TrF1 0.834 TrFR 0.999968 || VaL 1.829 VaA 0.569 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep077/120 | Lr 3.07e-05 | TrL 0.587 TrA 0.831 TrF1 0.831 TrFR 0.999968 || VaL 1.827 VaA 0.569 VaF1 0.565 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep078/120 | Lr 2.95e-05 | TrL 0.574 TrA 0.835 TrF1 0.834 TrFR 0.999968 || VaL 1.824 VaA 0.570 VaF1 0.567 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep079/120 | Lr 2.82e-05 | TrL 0.572 TrA 0.837 TrF1 0.837 TrFR 0.999968 || VaL 1.835 VaA 0.568 VaF1 0.564 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep080/120 | Lr 2.70e-05 | TrL 0.561 TrA 0.839 TrF1 0.839 TrFR 0.999968 || VaL 1.826 VaA 0.574 VaF1 0.571 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep081/120 | Lr 2.58e-05 | TrL 0.562 TrA 0.839 TrF1 0.839 TrFR 0.999968 || VaL 1.820 VaA 0.571 VaF1 0.567 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep082/120 | Lr 2.46e-05 | TrL 0.562 TrA 0.839 TrF1 0.839 TrFR 0.999968 || VaL 1.843 VaA 0.572 VaF1 0.568 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.2 dims (20.0% of total)
+[INFO] Ep083/120 | Lr 2.34e-05 | TrL 0.549 TrA 0.843 TrF1 0.843 TrFR 0.999968 || VaL 1.846 VaA 0.570 VaF1 0.567 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep084/120 | Lr 2.23e-05 | TrL 0.544 TrA 0.843 TrF1 0.843 TrFR 0.999968 || VaL 1.835 VaA 0.572 VaF1 0.568 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep085/120 | Lr 2.12e-05 | TrL 0.535 TrA 0.845 TrF1 0.845 TrFR 0.999968 || VaL 1.844 VaA 0.572 VaF1 0.570 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep086/120 | Lr 2.01e-05 | TrL 0.535 TrA 0.848 TrF1 0.848 TrFR 0.999968 || VaL 1.844 VaA 0.573 VaF1 0.570 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep087/120 | Lr 1.90e-05 | TrL 0.537 TrA 0.847 TrF1 0.847 TrFR 0.999968 || VaL 1.856 VaA 0.570 VaF1 0.568 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep088/120 | Lr 1.79e-05 | TrL 0.525 TrA 0.851 TrF1 0.851 TrFR 0.999968 || VaL 1.850 VaA 0.572 VaF1 0.568 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep089/120 | Lr 1.69e-05 | TrL 0.527 TrA 0.848 TrF1 0.848 TrFR 0.999968 || VaL 1.850 VaA 0.573 VaF1 0.571 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep090/120 | Lr 1.59e-05 | TrL 0.518 TrA 0.851 TrF1 0.851 TrFR 0.999968 || VaL 1.848 VaA 0.573 VaF1 0.570 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep091/120 | Lr 1.49e-05 | TrL 0.522 TrA 0.852 TrF1 0.852 TrFR 0.999968 || VaL 1.850 VaA 0.574 VaF1 0.572 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep092/120 | Lr 1.39e-05 | TrL 0.519 TrA 0.853 TrF1 0.853 TrFR 0.999968 || VaL 1.853 VaA 0.570 VaF1 0.567 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.2 dims (20.0% of total)
+[INFO] Ep093/120 | Lr 1.30e-05 | TrL 0.513 TrA 0.853 TrF1 0.853 TrFR 0.999968 || VaL 1.844 VaA 0.574 VaF1 0.571 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep094/120 | Lr 1.21e-05 | TrL 0.512 TrA 0.853 TrF1 0.853 TrFR 0.999968 || VaL 1.856 VaA 0.572 VaF1 0.569 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep095/120 | Lr 1.12e-05 | TrL 0.510 TrA 0.856 TrF1 0.856 TrFR 0.999968 || VaL 1.851 VaA 0.572 VaF1 0.569 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.2 dims (20.0% of total)
+[INFO] Ep096/120 | Lr 1.04e-05 | TrL 0.502 TrA 0.858 TrF1 0.858 TrFR 0.999968 || VaL 1.858 VaA 0.572 VaF1 0.570 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep097/120 | Lr 9.55e-06 | TrL 0.503 TrA 0.855 TrF1 0.855 TrFR 0.999968 || VaL 1.857 VaA 0.574 VaF1 0.572 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep098/120 | Lr 8.76e-06 | TrL 0.495 TrA 0.859 TrF1 0.859 TrFR 0.999968 || VaL 1.858 VaA 0.571 VaF1 0.567 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep099/120 | Lr 8.00e-06 | TrL 0.507 TrA 0.857 TrF1 0.857 TrFR 0.999968 || VaL 1.857 VaA 0.573 VaF1 0.570 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep100/120 | Lr 7.28e-06 | TrL 0.499 TrA 0.860 TrF1 0.860 TrFR 0.999968 || VaL 1.865 VaA 0.573 VaF1 0.570 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep101/120 | Lr 6.59e-06 | TrL 0.500 TrA 0.860 TrF1 0.860 TrFR 0.999968 || VaL 1.867 VaA 0.567 VaF1 0.564 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep102/120 | Lr 5.92e-06 | TrL 0.491 TrA 0.858 TrF1 0.858 TrFR 0.999968 || VaL 1.863 VaA 0.572 VaF1 0.569 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep103/120 | Lr 5.30e-06 | TrL 0.495 TrA 0.860 TrF1 0.860 TrFR 0.999968 || VaL 1.857 VaA 0.572 VaF1 0.568 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep104/120 | Lr 4.70e-06 | TrL 0.491 TrA 0.861 TrF1 0.861 TrFR 0.999968 || VaL 1.863 VaA 0.573 VaF1 0.571 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep105/120 | Lr 4.14e-06 | TrL 0.489 TrA 0.860 TrF1 0.860 TrFR 0.999968 || VaL 1.860 VaA 0.570 VaF1 0.567 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.8 dims (20.0% of total)
+[INFO] Ep106/120 | Lr 3.61e-06 | TrL 0.500 TrA 0.858 TrF1 0.858 TrFR 0.999968 || VaL 1.862 VaA 0.572 VaF1 0.569 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep107/120 | Lr 3.12e-06 | TrL 0.486 TrA 0.862 TrF1 0.862 TrFR 0.999968 || VaL 1.863 VaA 0.572 VaF1 0.568 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep108/120 | Lr 2.66e-06 | TrL 0.493 TrA 0.859 TrF1 0.859 TrFR 0.999968 || VaL 1.862 VaA 0.573 VaF1 0.571 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep109/120 | Lr 2.24e-06 | TrL 0.485 TrA 0.862 TrF1 0.862 TrFR 0.999968 || VaL 1.855 VaA 0.572 VaF1 0.570 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep110/120 | Lr 1.85e-06 | TrL 0.483 TrA 0.862 TrF1 0.862 TrFR 0.999968 || VaL 1.864 VaA 0.573 VaF1 0.572 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep111/120 | Lr 1.50e-06 | TrL 0.488 TrA 0.862 TrF1 0.862 TrFR 0.999968 || VaL 1.858 VaA 0.572 VaF1 0.569 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep112/120 | Lr 1.19e-06 | TrL 0.488 TrA 0.862 TrF1 0.862 TrFR 0.999968 || VaL 1.866 VaA 0.572 VaF1 0.569 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep113/120 | Lr 9.11e-07 | TrL 0.485 TrA 0.864 TrF1 0.864 TrFR 0.999968 || VaL 1.857 VaA 0.575 VaF1 0.572 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep114/120 | Lr 6.70e-07 | TrL 0.489 TrA 0.863 TrF1 0.863 TrFR 0.999968 || VaL 1.865 VaA 0.574 VaF1 0.571 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep115/120 | Lr 4.66e-07 | TrL 0.483 TrA 0.865 TrF1 0.865 TrFR 0.999968 || VaL 1.863 VaA 0.571 VaF1 0.568 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.1 dims (20.0% of total)
+[INFO] Ep116/120 | Lr 2.98e-07 | TrL 0.487 TrA 0.862 TrF1 0.862 TrFR 0.999968 || VaL 1.862 VaA 0.572 VaF1 0.569 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep117/120 | Lr 1.68e-07 | TrL 0.487 TrA 0.862 TrF1 0.862 TrFR 0.999968 || VaL 1.864 VaA 0.572 VaF1 0.570 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep118/120 | Lr 7.46e-08 | TrL 0.487 TrA 0.864 TrF1 0.864 TrFR 0.999968 || VaL 1.859 VaA 0.573 VaF1 0.571 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 256.0 dims (20.0% of total)
+[INFO] Ep119/120 | Lr 1.87e-08 | TrL 0.480 TrA 0.864 TrF1 0.864 TrFR 0.999968 || VaL 1.865 VaA 0.572 VaF1 0.569 VaFR 0.000000
+[INFO] 확인용 feat_dim: 1280
+[INFO] Avg erased per sample: 255.9 dims (20.0% of total)
+[INFO] Ep120/120 | Lr 0.00e+00 | TrL 0.491 TrA 0.861 TrF1 0.861 TrFR 0.999968 || VaL 1.860 VaA 0.570 VaF1 0.568 VaFR 0.000000
+[INFO] 학습 곡선 저장 완료 → results\curves\efficientnet_b0_datasetcifar100_dp0.2_noise0.05_seed42_epochs120_w5_curve.csv
+[INFO] 모델 체크포인트 저장 완료 → results\checkpoints\efficientnet_b0_cifar100_dp0.2_noise0.05_seed42.pth
+[INFO] [Eval] Erasure 0.00 | Acc 0.570 F1 0.568 FR 0.000000 Loss 1.860
+[INFO] [Eval] Erasure 0.20 | Acc 0.570 F1 0.568 FR 0.999969 Loss 2.231
+[INFO] [Eval] Erasure 0.40 | Acc 0.570 F1 0.568 FR 0.999969 Loss 2.602
+[INFO] =============== 종료: 백본=efficientnet_b0, 데이터셋=cifar100, DP=0.2, Noise=0.05, Seed=42, Warmup=5 ===============
+
+[INFO] 모든 실험 요약 결과 저장 완료 → results\lr_tune_efficientnet_b0_lr1e4_learnA.csv
