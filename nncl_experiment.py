@@ -13,6 +13,9 @@ Key Features:
 
 This version is intended for public release to reproduce the results from the paper.
 The core logic matches the implementation used for the original experiments.
+
+author = Lee Chae-Seok
+email = "quarry@kaist.ac.kr"
 """
 
 import argparse
