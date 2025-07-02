@@ -1,0 +1,255 @@
+[INFO] Received CLI args: Namespace(dataset='cifar100', data_root=WindowsPath('data'), backbones=['efficientnet_b0'], redundancy=0.25, learnable_A=False, no_nncl=True, dropout_rates=[0.2], noise_stds=[0.05], erasure_rates=[0.0, 0.2, 0.4, 0.5, 0.6], epochs=120, batch=128, warmup_epochs=5, aux_rec_loss=False, lambda_rec=1.0, num_workers=8, seed=42, deterministic=False, device='cuda', csv_out=WindowsPath('results/c100_eff_base.csv'), use_masked_var=False, lr=0.0001)
+[INFO] Running with backbone=efficientnet_b0, dp=0.2, noise=0.05, erasure_rates=[0.0, 0.2, 0.4, 0.5, 0.6]
+[INFO] 
+=============== 시작: 백본=efficientnet_b0, 데이터셋=cifar100, DP=0.2, Noise=0.05, Seed=42, Warmup=5 ===============
+[INFO] [Opt] AdamW lr=1.0000e-04, 스케줄러: 5 에폭 선형 워밍업 후 코사인 감쇠 (전체 120 에폭)
+[INFO] No features erased in this epoch.
+[INFO] Ep001/120 | Lr 4.00e-05 | TrL 4.642 TrA 0.014 TrF1 0.014 TrFR 1.000000 || VaL 4.595 VaA 0.021 VaF1 0.020 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep002/120 | Lr 6.00e-05 | TrL 4.495 TrA 0.038 TrF1 0.034 TrFR 1.000000 || VaL 4.292 VaA 0.074 VaF1 0.060 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep003/120 | Lr 8.00e-05 | TrL 4.131 TrA 0.095 TrF1 0.076 TrFR 1.000000 || VaL 3.786 VaA 0.140 VaF1 0.115 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep004/120 | Lr 1.00e-04 | TrL 3.665 TrA 0.159 TrF1 0.135 TrFR 1.000000 || VaL 3.219 VaA 0.226 VaF1 0.198 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep005/120 | Lr 1.00e-04 | TrL 3.221 TrA 0.224 TrF1 0.204 TrFR 1.000000 || VaL 2.811 VaA 0.292 VaF1 0.270 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep006/120 | Lr 1.00e-04 | TrL 2.914 TrA 0.276 TrF1 0.260 TrFR 1.000000 || VaL 2.541 VaA 0.347 VaF1 0.328 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep007/120 | Lr 9.99e-05 | TrL 2.695 TrA 0.315 TrF1 0.302 TrFR 1.000000 || VaL 2.358 VaA 0.384 VaF1 0.367 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep008/120 | Lr 9.98e-05 | TrL 2.536 TrA 0.350 TrF1 0.338 TrFR 1.000000 || VaL 2.229 VaA 0.415 VaF1 0.400 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep009/120 | Lr 9.97e-05 | TrL 2.414 TrA 0.378 TrF1 0.367 TrFR 1.000000 || VaL 2.130 VaA 0.436 VaF1 0.422 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep010/120 | Lr 9.95e-05 | TrL 2.311 TrA 0.395 TrF1 0.386 TrFR 1.000000 || VaL 2.056 VaA 0.456 VaF1 0.444 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep011/120 | Lr 9.93e-05 | TrL 2.218 TrA 0.414 TrF1 0.406 TrFR 1.000000 || VaL 1.998 VaA 0.467 VaF1 0.456 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep012/120 | Lr 9.91e-05 | TrL 2.137 TrA 0.433 TrF1 0.425 TrFR 1.000000 || VaL 1.956 VaA 0.476 VaF1 0.465 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep013/120 | Lr 9.88e-05 | TrL 2.080 TrA 0.446 TrF1 0.439 TrFR 1.000000 || VaL 1.916 VaA 0.491 VaF1 0.480 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep014/120 | Lr 9.85e-05 | TrL 2.009 TrA 0.461 TrF1 0.454 TrFR 1.000000 || VaL 1.872 VaA 0.496 VaF1 0.485 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep015/120 | Lr 9.81e-05 | TrL 1.954 TrA 0.474 TrF1 0.468 TrFR 1.000000 || VaL 1.849 VaA 0.506 VaF1 0.497 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep016/120 | Lr 9.78e-05 | TrL 1.904 TrA 0.486 TrF1 0.480 TrFR 1.000000 || VaL 1.820 VaA 0.513 VaF1 0.505 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep017/120 | Lr 9.73e-05 | TrL 1.859 TrA 0.496 TrF1 0.490 TrFR 1.000000 || VaL 1.815 VaA 0.517 VaF1 0.508 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep018/120 | Lr 9.69e-05 | TrL 1.801 TrA 0.508 TrF1 0.502 TrFR 1.000000 || VaL 1.786 VaA 0.525 VaF1 0.517 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep019/120 | Lr 9.64e-05 | TrL 1.768 TrA 0.516 TrF1 0.511 TrFR 1.000000 || VaL 1.770 VaA 0.532 VaF1 0.525 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep020/120 | Lr 9.59e-05 | TrL 1.737 TrA 0.524 TrF1 0.519 TrFR 1.000000 || VaL 1.758 VaA 0.533 VaF1 0.527 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep021/120 | Lr 9.53e-05 | TrL 1.689 TrA 0.535 TrF1 0.530 TrFR 1.000000 || VaL 1.735 VaA 0.540 VaF1 0.533 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep022/120 | Lr 9.47e-05 | TrL 1.661 TrA 0.542 TrF1 0.538 TrFR 1.000000 || VaL 1.729 VaA 0.541 VaF1 0.534 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep023/120 | Lr 9.41e-05 | TrL 1.623 TrA 0.551 TrF1 0.547 TrFR 1.000000 || VaL 1.730 VaA 0.546 VaF1 0.540 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep024/120 | Lr 9.34e-05 | TrL 1.593 TrA 0.558 TrF1 0.554 TrFR 1.000000 || VaL 1.708 VaA 0.553 VaF1 0.547 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep025/120 | Lr 9.27e-05 | TrL 1.567 TrA 0.564 TrF1 0.560 TrFR 1.000000 || VaL 1.709 VaA 0.552 VaF1 0.546 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep026/120 | Lr 9.20e-05 | TrL 1.532 TrA 0.572 TrF1 0.568 TrFR 1.000000 || VaL 1.704 VaA 0.556 VaF1 0.550 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep027/120 | Lr 9.12e-05 | TrL 1.488 TrA 0.586 TrF1 0.583 TrFR 1.000000 || VaL 1.707 VaA 0.559 VaF1 0.552 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep028/120 | Lr 9.05e-05 | TrL 1.466 TrA 0.590 TrF1 0.586 TrFR 1.000000 || VaL 1.703 VaA 0.562 VaF1 0.555 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep029/120 | Lr 8.96e-05 | TrL 1.438 TrA 0.594 TrF1 0.591 TrFR 1.000000 || VaL 1.703 VaA 0.560 VaF1 0.556 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep030/120 | Lr 8.88e-05 | TrL 1.407 TrA 0.605 TrF1 0.603 TrFR 1.000000 || VaL 1.691 VaA 0.565 VaF1 0.559 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep031/120 | Lr 8.79e-05 | TrL 1.394 TrA 0.609 TrF1 0.606 TrFR 1.000000 || VaL 1.705 VaA 0.562 VaF1 0.556 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep032/120 | Lr 8.70e-05 | TrL 1.364 TrA 0.615 TrF1 0.612 TrFR 1.000000 || VaL 1.719 VaA 0.561 VaF1 0.555 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep033/120 | Lr 8.61e-05 | TrL 1.330 TrA 0.622 TrF1 0.619 TrFR 1.000000 || VaL 1.712 VaA 0.570 VaF1 0.565 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep034/120 | Lr 8.51e-05 | TrL 1.319 TrA 0.628 TrF1 0.626 TrFR 1.000000 || VaL 1.709 VaA 0.568 VaF1 0.563 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep035/120 | Lr 8.41e-05 | TrL 1.292 TrA 0.633 TrF1 0.631 TrFR 1.000000 || VaL 1.728 VaA 0.564 VaF1 0.559 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep036/120 | Lr 8.31e-05 | TrL 1.260 TrA 0.641 TrF1 0.638 TrFR 1.000000 || VaL 1.715 VaA 0.571 VaF1 0.566 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep037/120 | Lr 8.21e-05 | TrL 1.243 TrA 0.644 TrF1 0.642 TrFR 1.000000 || VaL 1.716 VaA 0.572 VaF1 0.567 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep038/120 | Lr 8.10e-05 | TrL 1.227 TrA 0.649 TrF1 0.647 TrFR 1.000000 || VaL 1.740 VaA 0.569 VaF1 0.566 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep039/120 | Lr 7.99e-05 | TrL 1.198 TrA 0.656 TrF1 0.654 TrFR 1.000000 || VaL 1.743 VaA 0.573 VaF1 0.569 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep040/120 | Lr 7.88e-05 | TrL 1.186 TrA 0.660 TrF1 0.658 TrFR 1.000000 || VaL 1.743 VaA 0.572 VaF1 0.566 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep041/120 | Lr 7.77e-05 | TrL 1.160 TrA 0.667 TrF1 0.665 TrFR 1.000000 || VaL 1.739 VaA 0.577 VaF1 0.572 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep042/120 | Lr 7.66e-05 | TrL 1.144 TrA 0.669 TrF1 0.667 TrFR 1.000000 || VaL 1.753 VaA 0.575 VaF1 0.570 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep043/120 | Lr 7.54e-05 | TrL 1.123 TrA 0.674 TrF1 0.673 TrFR 1.000000 || VaL 1.761 VaA 0.579 VaF1 0.574 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep044/120 | Lr 7.42e-05 | TrL 1.113 TrA 0.679 TrF1 0.678 TrFR 1.000000 || VaL 1.783 VaA 0.572 VaF1 0.567 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep045/120 | Lr 7.30e-05 | TrL 1.091 TrA 0.684 TrF1 0.682 TrFR 1.000000 || VaL 1.770 VaA 0.576 VaF1 0.571 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep046/120 | Lr 7.18e-05 | TrL 1.077 TrA 0.688 TrF1 0.687 TrFR 1.000000 || VaL 1.770 VaA 0.578 VaF1 0.573 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep047/120 | Lr 7.05e-05 | TrL 1.054 TrA 0.695 TrF1 0.693 TrFR 1.000000 || VaL 1.789 VaA 0.575 VaF1 0.570 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep048/120 | Lr 6.93e-05 | TrL 1.039 TrA 0.700 TrF1 0.699 TrFR 1.000000 || VaL 1.798 VaA 0.576 VaF1 0.572 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep049/120 | Lr 6.80e-05 | TrL 1.032 TrA 0.704 TrF1 0.703 TrFR 1.000000 || VaL 1.792 VaA 0.575 VaF1 0.570 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep050/120 | Lr 6.67e-05 | TrL 1.006 TrA 0.709 TrF1 0.708 TrFR 1.000000 || VaL 1.803 VaA 0.576 VaF1 0.572 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep051/120 | Lr 6.55e-05 | TrL 0.999 TrA 0.711 TrF1 0.710 TrFR 1.000000 || VaL 1.818 VaA 0.576 VaF1 0.572 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep052/120 | Lr 6.41e-05 | TrL 0.978 TrA 0.716 TrF1 0.715 TrFR 1.000000 || VaL 1.806 VaA 0.579 VaF1 0.575 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep053/120 | Lr 6.28e-05 | TrL 0.960 TrA 0.719 TrF1 0.718 TrFR 1.000000 || VaL 1.828 VaA 0.580 VaF1 0.576 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep054/120 | Lr 6.15e-05 | TrL 0.957 TrA 0.720 TrF1 0.719 TrFR 1.000000 || VaL 1.819 VaA 0.579 VaF1 0.575 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep055/120 | Lr 6.02e-05 | TrL 0.936 TrA 0.727 TrF1 0.726 TrFR 1.000000 || VaL 1.824 VaA 0.580 VaF1 0.575 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep056/120 | Lr 5.88e-05 | TrL 0.920 TrA 0.733 TrF1 0.732 TrFR 1.000000 || VaL 1.843 VaA 0.578 VaF1 0.575 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep057/120 | Lr 5.75e-05 | TrL 0.914 TrA 0.733 TrF1 0.732 TrFR 1.000000 || VaL 1.851 VaA 0.577 VaF1 0.573 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep058/120 | Lr 5.61e-05 | TrL 0.903 TrA 0.740 TrF1 0.739 TrFR 1.000000 || VaL 1.853 VaA 0.578 VaF1 0.575 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep059/120 | Lr 5.48e-05 | TrL 0.888 TrA 0.741 TrF1 0.740 TrFR 1.000000 || VaL 1.868 VaA 0.577 VaF1 0.574 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep060/120 | Lr 5.34e-05 | TrL 0.883 TrA 0.743 TrF1 0.742 TrFR 1.000000 || VaL 1.878 VaA 0.582 VaF1 0.579 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep061/120 | Lr 5.20e-05 | TrL 0.866 TrA 0.747 TrF1 0.746 TrFR 1.000000 || VaL 1.884 VaA 0.576 VaF1 0.572 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep062/120 | Lr 5.07e-05 | TrL 0.852 TrA 0.753 TrF1 0.752 TrFR 1.000000 || VaL 1.872 VaA 0.580 VaF1 0.576 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep063/120 | Lr 4.93e-05 | TrL 0.851 TrA 0.752 TrF1 0.751 TrFR 1.000000 || VaL 1.871 VaA 0.583 VaF1 0.580 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep064/120 | Lr 4.80e-05 | TrL 0.833 TrA 0.759 TrF1 0.758 TrFR 1.000000 || VaL 1.892 VaA 0.579 VaF1 0.576 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep065/120 | Lr 4.66e-05 | TrL 0.823 TrA 0.761 TrF1 0.761 TrFR 1.000000 || VaL 1.901 VaA 0.578 VaF1 0.574 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep066/120 | Lr 4.52e-05 | TrL 0.812 TrA 0.766 TrF1 0.766 TrFR 1.000000 || VaL 1.912 VaA 0.578 VaF1 0.575 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep067/120 | Lr 4.39e-05 | TrL 0.807 TrA 0.765 TrF1 0.764 TrFR 1.000000 || VaL 1.916 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep068/120 | Lr 4.25e-05 | TrL 0.802 TrA 0.764 TrF1 0.764 TrFR 1.000000 || VaL 1.925 VaA 0.583 VaF1 0.579 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep069/120 | Lr 4.12e-05 | TrL 0.794 TrA 0.769 TrF1 0.768 TrFR 1.000000 || VaL 1.918 VaA 0.579 VaF1 0.576 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep070/120 | Lr 3.98e-05 | TrL 0.780 TrA 0.773 TrF1 0.772 TrFR 1.000000 || VaL 1.945 VaA 0.578 VaF1 0.574 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep071/120 | Lr 3.85e-05 | TrL 0.770 TrA 0.777 TrF1 0.776 TrFR 1.000000 || VaL 1.934 VaA 0.580 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep072/120 | Lr 3.72e-05 | TrL 0.767 TrA 0.775 TrF1 0.774 TrFR 1.000000 || VaL 1.934 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep073/120 | Lr 3.59e-05 | TrL 0.757 TrA 0.779 TrF1 0.778 TrFR 1.000000 || VaL 1.934 VaA 0.577 VaF1 0.573 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep074/120 | Lr 3.45e-05 | TrL 0.752 TrA 0.782 TrF1 0.782 TrFR 1.000000 || VaL 1.948 VaA 0.580 VaF1 0.577 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep075/120 | Lr 3.33e-05 | TrL 0.742 TrA 0.782 TrF1 0.782 TrFR 1.000000 || VaL 1.949 VaA 0.582 VaF1 0.579 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep076/120 | Lr 3.20e-05 | TrL 0.739 TrA 0.785 TrF1 0.784 TrFR 1.000000 || VaL 1.964 VaA 0.582 VaF1 0.579 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep077/120 | Lr 3.07e-05 | TrL 0.741 TrA 0.785 TrF1 0.785 TrFR 1.000000 || VaL 1.961 VaA 0.580 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep078/120 | Lr 2.95e-05 | TrL 0.730 TrA 0.788 TrF1 0.788 TrFR 1.000000 || VaL 1.967 VaA 0.579 VaF1 0.575 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep079/120 | Lr 2.82e-05 | TrL 0.716 TrA 0.791 TrF1 0.790 TrFR 1.000000 || VaL 1.957 VaA 0.580 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep080/120 | Lr 2.70e-05 | TrL 0.720 TrA 0.790 TrF1 0.789 TrFR 1.000000 || VaL 1.962 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep081/120 | Lr 2.58e-05 | TrL 0.718 TrA 0.791 TrF1 0.791 TrFR 1.000000 || VaL 1.986 VaA 0.580 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep082/120 | Lr 2.46e-05 | TrL 0.702 TrA 0.793 TrF1 0.793 TrFR 1.000000 || VaL 1.980 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep083/120 | Lr 2.34e-05 | TrL 0.700 TrA 0.798 TrF1 0.797 TrFR 1.000000 || VaL 1.984 VaA 0.584 VaF1 0.581 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep084/120 | Lr 2.23e-05 | TrL 0.694 TrA 0.796 TrF1 0.796 TrFR 1.000000 || VaL 1.990 VaA 0.582 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep085/120 | Lr 2.12e-05 | TrL 0.686 TrA 0.800 TrF1 0.800 TrFR 1.000000 || VaL 1.997 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep086/120 | Lr 2.01e-05 | TrL 0.689 TrA 0.800 TrF1 0.799 TrFR 1.000000 || VaL 1.997 VaA 0.583 VaF1 0.579 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep087/120 | Lr 1.90e-05 | TrL 0.688 TrA 0.798 TrF1 0.798 TrFR 1.000000 || VaL 1.987 VaA 0.581 VaF1 0.577 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep088/120 | Lr 1.79e-05 | TrL 0.671 TrA 0.803 TrF1 0.803 TrFR 1.000000 || VaL 1.998 VaA 0.583 VaF1 0.581 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep089/120 | Lr 1.69e-05 | TrL 0.679 TrA 0.802 TrF1 0.801 TrFR 1.000000 || VaL 1.987 VaA 0.583 VaF1 0.580 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep090/120 | Lr 1.59e-05 | TrL 0.673 TrA 0.804 TrF1 0.804 TrFR 1.000000 || VaL 1.999 VaA 0.580 VaF1 0.577 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep091/120 | Lr 1.49e-05 | TrL 0.668 TrA 0.804 TrF1 0.804 TrFR 1.000000 || VaL 1.996 VaA 0.579 VaF1 0.576 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep092/120 | Lr 1.39e-05 | TrL 0.664 TrA 0.805 TrF1 0.805 TrFR 1.000000 || VaL 1.995 VaA 0.582 VaF1 0.579 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep093/120 | Lr 1.30e-05 | TrL 0.658 TrA 0.808 TrF1 0.808 TrFR 1.000000 || VaL 2.008 VaA 0.580 VaF1 0.577 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep094/120 | Lr 1.21e-05 | TrL 0.663 TrA 0.808 TrF1 0.808 TrFR 1.000000 || VaL 2.005 VaA 0.579 VaF1 0.575 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep095/120 | Lr 1.12e-05 | TrL 0.660 TrA 0.808 TrF1 0.808 TrFR 1.000000 || VaL 2.014 VaA 0.581 VaF1 0.577 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep096/120 | Lr 1.04e-05 | TrL 0.656 TrA 0.809 TrF1 0.808 TrFR 1.000000 || VaL 2.009 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep097/120 | Lr 9.55e-06 | TrL 0.651 TrA 0.813 TrF1 0.812 TrFR 1.000000 || VaL 2.011 VaA 0.580 VaF1 0.577 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep098/120 | Lr 8.76e-06 | TrL 0.651 TrA 0.810 TrF1 0.809 TrFR 1.000000 || VaL 2.011 VaA 0.581 VaF1 0.579 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep099/120 | Lr 8.00e-06 | TrL 0.648 TrA 0.811 TrF1 0.811 TrFR 1.000000 || VaL 2.010 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep100/120 | Lr 7.28e-06 | TrL 0.642 TrA 0.812 TrF1 0.811 TrFR 1.000000 || VaL 2.009 VaA 0.580 VaF1 0.577 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep101/120 | Lr 6.59e-06 | TrL 0.642 TrA 0.814 TrF1 0.814 TrFR 1.000000 || VaL 2.015 VaA 0.583 VaF1 0.580 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep102/120 | Lr 5.92e-06 | TrL 0.637 TrA 0.815 TrF1 0.815 TrFR 1.000000 || VaL 2.009 VaA 0.576 VaF1 0.573 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep103/120 | Lr 5.30e-06 | TrL 0.636 TrA 0.815 TrF1 0.815 TrFR 1.000000 || VaL 2.009 VaA 0.582 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep104/120 | Lr 4.70e-06 | TrL 0.637 TrA 0.815 TrF1 0.814 TrFR 1.000000 || VaL 2.004 VaA 0.584 VaF1 0.580 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep105/120 | Lr 4.14e-06 | TrL 0.645 TrA 0.811 TrF1 0.811 TrFR 1.000000 || VaL 2.018 VaA 0.580 VaF1 0.576 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep106/120 | Lr 3.61e-06 | TrL 0.635 TrA 0.817 TrF1 0.817 TrFR 1.000000 || VaL 2.024 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep107/120 | Lr 3.12e-06 | TrL 0.633 TrA 0.817 TrF1 0.817 TrFR 1.000000 || VaL 2.018 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep108/120 | Lr 2.66e-06 | TrL 0.633 TrA 0.816 TrF1 0.815 TrFR 1.000000 || VaL 2.005 VaA 0.583 VaF1 0.581 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep109/120 | Lr 2.24e-06 | TrL 0.634 TrA 0.816 TrF1 0.816 TrFR 1.000000 || VaL 2.028 VaA 0.580 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep110/120 | Lr 1.85e-06 | TrL 0.630 TrA 0.817 TrF1 0.817 TrFR 1.000000 || VaL 2.028 VaA 0.580 VaF1 0.577 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep111/120 | Lr 1.50e-06 | TrL 0.642 TrA 0.814 TrF1 0.814 TrFR 1.000000 || VaL 2.025 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep112/120 | Lr 1.19e-06 | TrL 0.625 TrA 0.818 TrF1 0.817 TrFR 1.000000 || VaL 2.015 VaA 0.583 VaF1 0.580 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep113/120 | Lr 9.11e-07 | TrL 0.634 TrA 0.816 TrF1 0.816 TrFR 1.000000 || VaL 2.013 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep114/120 | Lr 6.70e-07 | TrL 0.625 TrA 0.818 TrF1 0.818 TrFR 1.000000 || VaL 2.010 VaA 0.580 VaF1 0.577 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep115/120 | Lr 4.66e-07 | TrL 0.625 TrA 0.817 TrF1 0.817 TrFR 1.000000 || VaL 2.023 VaA 0.583 VaF1 0.580 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep116/120 | Lr 2.98e-07 | TrL 0.623 TrA 0.819 TrF1 0.819 TrFR 1.000000 || VaL 2.018 VaA 0.581 VaF1 0.578 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep117/120 | Lr 1.68e-07 | TrL 0.622 TrA 0.819 TrF1 0.819 TrFR 1.000000 || VaL 2.026 VaA 0.582 VaF1 0.579 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep118/120 | Lr 7.46e-08 | TrL 0.630 TrA 0.817 TrF1 0.817 TrFR 1.000000 || VaL 2.023 VaA 0.583 VaF1 0.580 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep119/120 | Lr 1.87e-08 | TrL 0.625 TrA 0.818 TrF1 0.818 TrFR 1.000000 || VaL 2.022 VaA 0.581 VaF1 0.579 VaFR 1.000000
+[INFO] No features erased in this epoch.
+[INFO] Ep120/120 | Lr 0.00e+00 | TrL 0.633 TrA 0.816 TrF1 0.816 TrFR 1.000000 || VaL 2.002 VaA 0.582 VaF1 0.580 VaFR 1.000000
+[INFO] 학습 곡선 저장 완료 → results\curves\efficientnet_b0_datasetcifar100_dp0.2_noise0.05_seed42_epochs120_w5_curve.csv
+[INFO] 모델 체크포인트 저장 완료 → results\checkpoints\efficientnet_b0_cifar100_dp0.2_noise0.05_seed42.pth
+[INFO] [Eval] Erasure 0.00 | Acc 0.582 F1 0.580 FR 1.000000 Loss 2.002
+[INFO] [Eval] Erasure 0.20 | Acc 0.575 F1 0.573 FR 1.000000 Loss 2.182
+[INFO] [Eval] Erasure 0.40 | Acc 0.561 F1 0.559 FR 1.000000 Loss 2.392
+[INFO] [Eval] Erasure 0.50 | Acc 0.550 F1 0.548 FR 1.000000 Loss 2.579
+[INFO] [Eval] Erasure 0.60 | Acc 0.538 F1 0.536 FR 1.000000 Loss 2.938
+[INFO] =============== 종료: 백본=efficientnet_b0, 데이터셋=cifar100, DP=0.2, Noise=0.05, Seed=42, Warmup=5 ===============
+
+[INFO] 모든 실험 요약 결과 저장 완료 → results\c100_eff_base.csv
