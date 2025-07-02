@@ -1,16 +1,20 @@
 # Neural Network Coding Layer (NNCL)
 
 This repository contains the official PyTorch implementation for the paper: **"Neural Network Coding Layer (NNCL): Enhancing Deep Learning Robustness via Feature Restoration"**.
+
 NNCL is a modular layer inspired by linear coding theory. It introduces structured redundancy into feature vectors, enabling the algebraic restoration of features lost to perturbations like dropout or noise. This enhances model robustness while retaining the regularization benefits of feature erasure.
 
-## Features
+---
 
-- **NNCL Module**: A PyTorch `nn.Module` that can be easily integrated into various deep learning architectures.
-- **Robustness Evaluation**: Scripts to reproduce experiments on CIFAR-10/100 with ResNet, EfficientNet, and Vision Transformer backbones.
-- **Extensible**: Designed to be flexible for integration into new models and tasks.
+## 🚀 Features
 
+-   **NNCL Module**: A PyTorch `nn.Module` that can be easily integrated into various deep learning architectures.
+-   **Robustness Evaluation**: Scripts to reproduce experiments on CIFAR-10/100 with ResNet, EfficientNet, and Vision Transformer backbones.
+-   **Extensible**: Designed to be flexible for integration into new models and tasks.
 
-## Installation
+---
+
+## ⚙️ Installation
 
 1.  **Clone the repository:**
     ```bash
@@ -32,25 +36,27 @@ NNCL is a modular layer inspired by linear coding theory. It introduces structur
 
 ---
 
-## Reproducing the Results
-
-### Reproducing All Paper Results
+## 📈 Reproducing the Results
 
 All experiments are defined and launched from `launcher.py`. This script calls `nncl_experiment.py` with the appropriate arguments for each experimental setting described in the paper.
 
 To run all experiments and reproduce the paper's main results, simply execute the launcher script:
 ```bash
 python launcher.py
+```
 
 This will run all variants (Baseline, NNCL-Fixed, NNCL-Learnable) for all backbone-dataset combinations, as well as the ablation studies for learning rate and redundancy levels.
 
- - Logs: A detailed log file for each experiment will be saved in the results/ directory (e.g., results/c10_r50_nncl_learnA.log).
- - Results: A summary CSV for each run will be saved in results/ (e.g., results/c10_r50_nncl_learnA.csv).
- - Learning Curves: Per-epoch training curves are saved in results/curves/.
+Logs: A detailed log file for each experiment will be saved in the results/ directory (e.g., results/c10_r50_nncl_learnA.log).
+
+Results: A summary CSV for each run will be saved in results/ (e.g., results/c10_r50_nncl_learnA.csv).
+
+Learning Curves: Per-epoch training curves are saved in results/curves/.
 
 Running a Single Experiment
 You can also run a single experiment directly using nncl_experiment.py. For example, to train a ResNet-50 model on CIFAR-10 with a learnable NNCL:
 
+```bash
 python nncl_experiment.py \
     --dataset cifar10 \
     --backbones resnet50 \
@@ -66,7 +72,12 @@ python nncl_experiment.py \
     --aux_rec_loss \
     --lambda_rec 1.0 \
     --csv_out results/my_single_run.csv
+```
+Use python nncl_experiment.py --help to see all available options.
+
+## ✍️ Citation
+If you find this work useful in your research, please consider citing our paper:
 
 
-Acknowledgements
+## 🙏 Acknowledgements
 This work was supported by Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korea government (MSIT) (No.RS-2024-00459703).
