@@ -293,7 +293,7 @@ def get_dataloaders(cfg: argparse.Namespace) -> Tuple[torch.utils.data.DataLoade
 
     train_transforms = [
         transforms.Resize((img_size, img_size)) if is_vit else nn.Identity(),
-        transforms.RandomCrop(32, padding=4),
+        transforms.RandomCrop(32, padding=4) if not is_vit else nn.Identity(),
         transforms.RandomHorizontalFlip(),
         transforms.RandomAffine(degrees=10, translate=(0.1, 0.1)),
         transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1),
