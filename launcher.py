@@ -8,6 +8,9 @@ Learning Robustness via Feature Restoration".
 
 It defines a series of experimental configurations and runs them sequentially
 using `nncl_experiment.py`.
+
+author = Lee Chae-Seok
+email = "quarry@kaist.ac.kr"
 """
 
 import os
