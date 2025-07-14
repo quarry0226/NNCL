@@ -60,10 +60,10 @@ add_experiment("c100_eff_nncl_learnA", ["--dataset", "cifar100", "--backbones", 
 add_experiment("c100_eff_nncl_fixedA", ["--dataset", "cifar100", "--backbones", "efficientnet_b0", "--dropout_rates", DP_RATE_SHARED, "--noise_stds", NOISE_STD_SHARED, "--erasure_rates", *ERASURE_RATES_SHARED, "--redundancy", "0.5", *NNCL_FLAGS_FIXED_BASE])
 add_experiment("c100_eff_baseline",    ["--dataset", "cifar100", "--backbones", "efficientnet_b0", "--no_nncl", "--dropout_rates", DP_RATE_SHARED, "--noise_stds", NOISE_STD_SHARED, "--erasure_rates", *ERASURE_RATES_SHARED])
 
-# c) CIFAR-10 / Vision Transformer
-add_experiment("c10_vit_nncl_learnA", ["--dataset", "cifar10", "--backbones", "vit_base_patch16_224", "--dropout_rates", DP_RATE_SHARED, "--noise_stds", NOISE_STD_SHARED, "--erasure_rates", *ERASURE_RATES_SHARED, "--redundancy", "0.5", *NNCL_FLAGS_LEARNABLE_BASE])
-add_experiment("c10_vit_nncl_fixedA", ["--dataset", "cifar10", "--backbones", "vit_base_patch16_224", "--dropout_rates", DP_RATE_SHARED, "--noise_stds", NOISE_STD_SHARED, "--erasure_rates", *ERASURE_RATES_SHARED, "--redundancy", "0.5", *NNCL_FLAGS_FIXED_BASE])
-add_experiment("c10_vit_baseline",    ["--dataset", "cifar10", "--backbones", "vit_base_patch16_224", "--no_nncl", "--dropout_rates", DP_RATE_SHARED, "--noise_stds", NOISE_STD_SHARED, "--erasure_rates", *ERASURE_RATES_SHARED])
+# c) CIFAR-10 / Vision Transformer (Future Work)
+# add_experiment("c10_vit_nncl_learnA", ["--dataset", "cifar10", "--backbones", "vit_base_patch16_224", "--dropout_rates", DP_RATE_SHARED, "--noise_stds", NOISE_STD_SHARED, "--erasure_rates", *ERASURE_RATES_SHARED, "--redundancy", "0.5", *NNCL_FLAGS_LEARNABLE_BASE])
+# add_experiment("c10_vit_nncl_fixedA", ["--dataset", "cifar10", "--backbones", "vit_base_patch16_224", "--dropout_rates", DP_RATE_SHARED, "--noise_stds", NOISE_STD_SHARED, "--erasure_rates", *ERASURE_RATES_SHARED, "--redundancy", "0.5", *NNCL_FLAGS_FIXED_BASE])
+# add_experiment("c10_vit_baseline",    ["--dataset", "cifar10", "--backbones", "vit_base_patch16_224", "--no_nncl", "--dropout_rates", DP_RATE_SHARED, "--noise_stds", NOISE_STD_SHARED, "--erasure_rates", *ERASURE_RATES_SHARED])
 
 
 # --- 2. Ablation Studies ---
