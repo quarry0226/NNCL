@@ -56,6 +56,10 @@ add("c10_r50_base", ["--dataset", "cifar10", "--backbones", "resnet50", "--no_nn
 add_nncl_variants("c100_eff", "cifar100", "efficientnet_b0")
 add("c100_eff_base", ["--dataset", "cifar100", "--backbones", "efficientnet_b0", "--no_nncl", "--dropout_rates", dp_shared, "--noise_stds", noise_shared, "--erasure_rates", "0", "0.2", "0.4", "0.5", "0.6", "--batch", "128"])
 
+# # CIFAR-10 / ViT
+# add_nncl_variants("c10_vit", "cifar10", "vit_base_patch16_224")
+# add("c10_vit_base", ["--dataset", "cifar10", "--backbones", "vit_base_patch16_224", "--no_nncl", "--dropout_rates", dp_shared, "--noise_stds", noise_shared, "--erasure_rates", *erasures_shared, "--batch", "128"])
+
 # Learning Rate Tuning
 learning_rates = ["1e-4", "3e-4", "5e-5"]
 for lr in learning_rates:
