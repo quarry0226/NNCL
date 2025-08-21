@@ -1,0 +1,8 @@
+backbone,dataset,dropout_p,noise_std,erasure,accuracy,f1,fr_accuracy,redundancy,learnable_A,aux_rec_loss,lambda_rec,no_nncl,final_eval_loss,seed,epochs,batch_size,warmup_epochs
+vit_base_patch16_224,cifar10,0.2,0.05,0.0,0.9762,0.9761901066758021,1.0,0.25,False,False,1.0,True,0.18608471544404748,42,120,128,5
+vit_base_patch16_224,cifar10,0.2,0.05,0.1,0.9759,0.9758863756712532,1.0,0.25,False,False,1.0,True,0.1682321627635043,42,120,128,5
+vit_base_patch16_224,cifar10,0.2,0.05,0.2,0.9764,0.976392772226753,1.0,0.25,False,False,1.0,True,0.1504906962516834,42,120,128,5
+vit_base_patch16_224,cifar10,0.2,0.05,0.3,0.9762,0.9761944418171847,1.0,0.25,False,False,1.0,True,0.13350423557208851,42,120,128,5
+vit_base_patch16_224,cifar10,0.2,0.05,0.4,0.9755,0.9754889207409765,1.0,0.25,False,False,1.0,True,0.11509720700264443,42,120,128,5
+vit_base_patch16_224,cifar10,0.2,0.05,0.5,0.9759,0.9758914366853755,1.0,0.25,False,False,1.0,True,0.10171532402206213,42,120,128,5
+vit_base_patch16_224,cifar10,0.2,0.05,0.6,0.9756,0.9755882050713088,1.0,0.25,False,False,1.0,True,0.08940448590703308,42,120,128,5
