@@ -1,0 +1,100 @@
+[2025-08-22 09:51:14][INFO] CLI arguments: {'dataset': 'cifar10', 'data_root': WindowsPath('data'), 'backbone': 'vit_tiny_patch16_224', 'redundancy': 0.5, 'learnable_A': True, 'no_nncl': False, 'dropout_p': 0.1, 'noise_std': 0.0, 'erasure_rates': [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9], 'epochs': 60, 'batch': 128, 'warmup_epochs': 5, 'aux_rec_loss': True, 'lambda_rec': 1.0, 'num_workers': 8, 'seed': 42, 'deterministic': False, 'device': 'cuda', 'save_path': 'results_add\\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth', 'csv_out': WindowsPath('results_add/c10_vit_tiny_nncl_learnA_lambda1.0_seed42_eval90.csv'), 'use_masked_var': False, 'lr': 3e-05}
+[2025-08-22 09:51:14][INFO] 
+==================== Starting Experiment ====================
+[2025-08-22 09:51:14][INFO] Backbone: vit_tiny_patch16_224, Dataset: cifar10, Dropout: 0.1, Noise: 0.0, Seed: 42
+[2025-08-22 09:51:15][INFO] Loading pretrained weights from Hugging Face hub (timm/vit_tiny_patch16_224.augreg_in21k_ft_in1k)
+[2025-08-22 09:51:15][INFO] [timm/vit_tiny_patch16_224.augreg_in21k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+[2025-08-22 09:51:15][INFO] Optimizer: AdamW, LR: 3.00e-05, Scheduler: 5-epoch warmup with cosine decay.
+[2025-08-22 09:56:34][INFO] Ep001/60 | LR 1.20e-05 | TrL 1.371 TrAcc 0.533 TrFR 1.000 | VaL 0.689 VaAcc 0.763 VaFR 1.000
+[2025-08-22 09:56:34][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.7632
+[2025-08-22 10:01:53][INFO] Ep002/60 | LR 1.80e-05 | TrL 0.357 TrAcc 0.879 TrFR 1.000 | VaL 0.219 VaAcc 0.929 VaFR 1.000
+[2025-08-22 10:01:54][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9290
+[2025-08-22 10:07:14][INFO] Ep003/60 | LR 2.40e-05 | TrL 0.145 TrAcc 0.951 TrFR 1.000 | VaL 0.139 VaAcc 0.954 VaFR 1.000
+[2025-08-22 10:07:14][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9537
+[2025-08-22 10:12:31][INFO] Ep004/60 | LR 3.00e-05 | TrL 0.080 TrAcc 0.974 TrFR 1.000 | VaL 0.129 VaAcc 0.959 VaFR 1.000
+[2025-08-22 10:12:31][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9586
+[2025-08-22 10:17:45][INFO] Ep005/60 | LR 3.00e-05 | TrL 0.045 TrAcc 0.985 TrFR 1.000 | VaL 0.159 VaAcc 0.953 VaFR 1.000
+[2025-08-22 10:23:03][INFO] Ep006/60 | LR 3.00e-05 | TrL 0.023 TrAcc 0.993 TrFR 1.000 | VaL 0.139 VaAcc 0.962 VaFR 1.000
+[2025-08-22 10:23:03][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9623
+[2025-08-22 10:28:18][INFO] Ep007/60 | LR 2.99e-05 | TrL 0.016 TrAcc 0.995 TrFR 1.000 | VaL 0.150 VaAcc 0.959 VaFR 1.000
+[2025-08-22 10:33:37][INFO] Ep008/60 | LR 2.98e-05 | TrL 0.012 TrAcc 0.996 TrFR 1.000 | VaL 0.128 VaAcc 0.967 VaFR 1.000
+[2025-08-22 10:33:37][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9672
+[2025-08-22 10:38:52][INFO] Ep009/60 | LR 2.96e-05 | TrL 0.010 TrAcc 0.997 TrFR 1.000 | VaL 0.147 VaAcc 0.964 VaFR 1.000
+[2025-08-22 10:44:10][INFO] Ep010/60 | LR 2.94e-05 | TrL 0.009 TrAcc 0.997 TrFR 1.000 | VaL 0.165 VaAcc 0.963 VaFR 1.000
+[2025-08-22 10:49:30][INFO] Ep011/60 | LR 2.91e-05 | TrL 0.015 TrAcc 0.995 TrFR 1.000 | VaL 0.156 VaAcc 0.964 VaFR 1.000
+[2025-08-22 10:54:41][INFO] Ep012/60 | LR 2.88e-05 | TrL 0.007 TrAcc 0.998 TrFR 1.000 | VaL 0.140 VaAcc 0.966 VaFR 1.000
+[2025-08-22 10:59:53][INFO] Ep013/60 | LR 2.85e-05 | TrL 0.005 TrAcc 0.998 TrFR 1.000 | VaL 0.165 VaAcc 0.965 VaFR 1.000
+[2025-08-22 11:05:24][INFO] Ep014/60 | LR 2.81e-05 | TrL 0.008 TrAcc 0.997 TrFR 1.000 | VaL 0.136 VaAcc 0.970 VaFR 1.000
+[2025-08-22 11:05:24][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9699
+[2025-08-22 11:10:47][INFO] Ep015/60 | LR 2.76e-05 | TrL 0.009 TrAcc 0.997 TrFR 1.000 | VaL 0.143 VaAcc 0.969 VaFR 1.000
+[2025-08-22 11:16:11][INFO] Ep016/60 | LR 2.71e-05 | TrL 0.004 TrAcc 0.999 TrFR 1.000 | VaL 0.148 VaAcc 0.966 VaFR 1.000
+[2025-08-22 11:21:36][INFO] Ep017/60 | LR 2.66e-05 | TrL 0.009 TrAcc 0.997 TrFR 1.000 | VaL 0.158 VaAcc 0.963 VaFR 1.000
+[2025-08-22 11:26:54][INFO] Ep018/60 | LR 2.61e-05 | TrL 0.005 TrAcc 0.998 TrFR 1.000 | VaL 0.177 VaAcc 0.963 VaFR 1.000
+[2025-08-22 11:32:16][INFO] Ep019/60 | LR 2.55e-05 | TrL 0.008 TrAcc 0.997 TrFR 1.000 | VaL 0.159 VaAcc 0.969 VaFR 1.000
+[2025-08-22 11:37:38][INFO] Ep020/60 | LR 2.48e-05 | TrL 0.003 TrAcc 0.999 TrFR 1.000 | VaL 0.157 VaAcc 0.969 VaFR 1.000
+[2025-08-22 11:43:00][INFO] Ep021/60 | LR 2.42e-05 | TrL 0.001 TrAcc 1.000 TrFR 1.000 | VaL 0.145 VaAcc 0.971 VaFR 1.000
+[2025-08-22 11:43:00][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9710
+[2025-08-22 11:48:20][INFO] Ep022/60 | LR 2.35e-05 | TrL 0.001 TrAcc 0.999 TrFR 1.000 | VaL 0.178 VaAcc 0.965 VaFR 1.000
+[2025-08-22 11:53:40][INFO] Ep023/60 | LR 2.27e-05 | TrL 0.010 TrAcc 0.997 TrFR 1.000 | VaL 0.160 VaAcc 0.965 VaFR 1.000
+[2025-08-22 11:58:58][INFO] Ep024/60 | LR 2.20e-05 | TrL 0.004 TrAcc 0.999 TrFR 1.000 | VaL 0.164 VaAcc 0.967 VaFR 1.000
+[2025-08-22 12:04:22][INFO] Ep025/60 | LR 2.12e-05 | TrL 0.003 TrAcc 0.999 TrFR 1.000 | VaL 0.174 VaAcc 0.965 VaFR 1.000
+[2025-08-22 12:09:42][INFO] Ep026/60 | LR 2.04e-05 | TrL 0.003 TrAcc 0.999 TrFR 1.000 | VaL 0.168 VaAcc 0.966 VaFR 1.000
+[2025-08-22 12:15:03][INFO] Ep027/60 | LR 1.96e-05 | TrL 0.002 TrAcc 0.999 TrFR 1.000 | VaL 0.146 VaAcc 0.972 VaFR 1.000
+[2025-08-22 12:15:03][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9716
+[2025-08-22 12:20:23][INFO] Ep028/60 | LR 1.88e-05 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.148 VaAcc 0.971 VaFR 1.000
+[2025-08-22 12:25:38][INFO] Ep029/60 | LR 1.80e-05 | TrL 0.001 TrAcc 1.000 TrFR 1.000 | VaL 0.170 VaAcc 0.966 VaFR 1.000
+[2025-08-22 12:30:54][INFO] Ep030/60 | LR 1.71e-05 | TrL 0.004 TrAcc 0.999 TrFR 1.000 | VaL 0.158 VaAcc 0.970 VaFR 1.000
+[2025-08-22 12:36:08][INFO] Ep031/60 | LR 1.63e-05 | TrL 0.002 TrAcc 0.999 TrFR 1.000 | VaL 0.153 VaAcc 0.972 VaFR 1.000
+[2025-08-22 12:36:08][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9719
+[2025-08-22 12:41:21][INFO] Ep032/60 | LR 1.54e-05 | TrL 0.001 TrAcc 1.000 TrFR 1.000 | VaL 0.146 VaAcc 0.974 VaFR 1.000
+[2025-08-22 12:41:21][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9737
+[2025-08-22 12:46:35][INFO] Ep033/60 | LR 1.46e-05 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.152 VaAcc 0.972 VaFR 1.000
+[2025-08-22 12:51:54][INFO] Ep034/60 | LR 1.37e-05 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.144 VaAcc 0.975 VaFR 1.000
+[2025-08-22 12:51:54][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9747
+[2025-08-22 12:57:12][INFO] Ep035/60 | LR 1.29e-05 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.142 VaAcc 0.975 VaFR 1.000
+[2025-08-22 12:57:12][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9751
+[2025-08-22 13:02:32][INFO] Ep036/60 | LR 1.20e-05 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.141 VaAcc 0.975 VaFR 1.000
+[2025-08-22 13:02:32][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9753
+[2025-08-22 13:07:53][INFO] Ep037/60 | LR 1.12e-05 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.142 VaAcc 0.976 VaFR 1.000
+[2025-08-22 13:07:53][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9759
+[2025-08-22 13:13:11][INFO] Ep038/60 | LR 1.04e-05 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.143 VaAcc 0.976 VaFR 1.000
+[2025-08-22 13:13:11][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9760
+[2025-08-22 13:18:35][INFO] Ep039/60 | LR 9.56e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.143 VaAcc 0.976 VaFR 1.000
+[2025-08-22 13:18:35][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9761
+[2025-08-22 13:23:49][INFO] Ep040/60 | LR 8.77e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.144 VaAcc 0.976 VaFR 1.000
+[2025-08-22 13:29:05][INFO] Ep041/60 | LR 8.00e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.144 VaAcc 0.976 VaFR 1.000
+[2025-08-22 13:34:16][INFO] Ep042/60 | LR 7.25e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.145 VaAcc 0.976 VaFR 1.000
+[2025-08-22 13:39:25][INFO] Ep043/60 | LR 6.53e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.145 VaAcc 0.976 VaFR 1.000
+[2025-08-22 13:44:34][INFO] Ep044/60 | LR 5.84e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.146 VaAcc 0.976 VaFR 1.000
+[2025-08-22 13:49:46][INFO] Ep045/60 | LR 5.18e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.146 VaAcc 0.976 VaFR 1.000
+[2025-08-22 13:54:55][INFO] Ep046/60 | LR 4.55e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.147 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:00:04][INFO] Ep047/60 | LR 3.95e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.148 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:05:14][INFO] Ep048/60 | LR 3.39e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.148 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:10:24][INFO] Ep049/60 | LR 2.86e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.149 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:15:33][INFO] Ep050/60 | LR 2.38e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.150 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:20:42][INFO] Ep051/60 | LR 1.94e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.150 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:25:51][INFO] Ep052/60 | LR 1.54e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.151 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:31:00][INFO] Ep053/60 | LR 1.18e-06 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.151 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:31:00][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9762
+[2025-08-22 14:36:10][INFO] Ep054/60 | LR 8.72e-07 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.152 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:36:10][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9763
+[2025-08-22 14:41:20][INFO] Ep055/60 | LR 6.08e-07 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.152 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:41:20][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9764
+[2025-08-22 14:46:29][INFO] Ep056/60 | LR 3.90e-07 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.152 VaAcc 0.976 VaFR 1.000
+[2025-08-22 14:51:40][INFO] Ep057/60 | LR 2.20e-07 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.152 VaAcc 0.977 VaFR 1.000
+[2025-08-22 14:51:40][INFO] \U0001f389 New best model saved to results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth with accuracy: 0.9766
+[2025-08-22 14:56:50][INFO] Ep058/60 | LR 9.78e-08 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.153 VaAcc 0.977 VaFR 1.000
+[2025-08-22 15:01:59][INFO] Ep059/60 | LR 2.45e-08 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.153 VaAcc 0.977 VaFR 1.000
+[2025-08-22 15:07:09][INFO] Ep060/60 | LR 0.00e+00 | TrL 0.000 TrAcc 1.000 TrFR 1.000 | VaL 0.153 VaAcc 0.977 VaFR 1.000
+[2025-08-22 15:07:09][INFO] Loading best model from results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42.pth for final evaluation.
+[2025-08-22 15:07:58][INFO] [Final Eval] Erasure 0.00 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:09:06][INFO] [Final Eval] Erasure 0.10 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:10:20][INFO] [Final Eval] Erasure 0.20 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:11:40][INFO] [Final Eval] Erasure 0.30 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:13:07][INFO] [Final Eval] Erasure 0.40 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:14:42][INFO] [Final Eval] Erasure 0.50 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:16:25][INFO] [Final Eval] Erasure 0.60 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:18:05][INFO] [Final Eval] Erasure 0.70 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:19:46][INFO] [Final Eval] Erasure 0.80 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:21:37][INFO] [Final Eval] Erasure 0.90 | Acc 0.9766 F1 0.9766 FR 1.0000
+[2025-08-22 15:21:37][INFO] All experiment results saved to -> results_add\c10_vit_tiny_nncl_learnA_lambda1.0_seed42_eval90.csv
