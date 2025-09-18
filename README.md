@@ -77,6 +77,7 @@ Use python nncl_experiment.py --help to see all available options.
 
 ## ✍️ Citation
 If you find this work useful in your research, please consider citing our paper:
+
 C. -S. Lee, A. Khan, S. -j. Chang and H. -J. Chang, "Neural Network Coding Layer (NNCL): Enhancing Deep Learning Robustness against Feature Erasure," in IEEE Access, doi: 10.1109/ACCESS.2025.3610080
 
 ## 🙏 Acknowledgements
